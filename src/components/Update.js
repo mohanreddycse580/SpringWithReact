@@ -10,7 +10,7 @@ class Update extends React.Component {
   }
   
   componentDidMount() {
-	fetch('http://localhost:9999/website/search/' + this.props.match.params.id)
+	fetch('https://mohanspringboot.cfapps.io/website/search/' + this.props.match.params.id)
 		.then(response => {
 			return response.json();
 		}).then(result => {
@@ -29,7 +29,7 @@ class Update extends React.Component {
   }
   handleSubmit(event) {
 	  event.preventDefault();
-	  fetch('http://localhost:9999/website/update', {
+	  fetch('https://mohanspringboot.cfapps.io/website/update', {
 			method: 'POST',
 			body: JSON.stringify({
 							id:this.state.id,
