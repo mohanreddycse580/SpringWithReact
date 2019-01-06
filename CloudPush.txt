@@ -1,0 +1,12 @@
+Spring Boot:--
+
+cf push -p SpringBootReactJS.jar mohanspringboot
+
+
+
+React App:----
+
+npm run-script build
+
+E:\ReactPractice\my-app\build>cf push -b staticfile_buildpack mohanreactjs servi
+ce-worker.js
